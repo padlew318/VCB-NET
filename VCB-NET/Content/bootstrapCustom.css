@@ -1,0 +1,406 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
+code {
+  font-size: 80%;
+}
+
+.logotxt{
+		float:left;
+}
+.header_options{
+	float:right;
+	color:#808080;
+	padding-top:30px;
+	padding-right:10px;
+}
+.header_options a:link, .header_options a:visited
+{
+color: #808080;
+text-decoration: none;
+}
+
+.header_options a:hover
+{
+color: #808080;
+text-decoration: none;
+}
+
+.page-header {
+    margin: 0;
+}
+.page-header h1 {
+    font-size: 24px;
+}
+
+.green-box{
+	 height:150px;
+	 width:100%;
+	 background-color:green;
+	 color:#fff;
+	 border: 1px #999 solid;
+	 padding:5px;
+	 margin:8px;
+	 float:left;
+	 cursor:pointer;cursor:hand;
+	 box-shadow:3px 3px 3px #999;
+	}
+.black-box{
+	 height:150px;
+	 width:100%;
+	 background-color:black;
+	 color:#fff;
+	 border: 1px #999 solid;
+	 padding:5px;
+	 margin:8px;
+	 float:left;
+	 cursor:pointer;cursor:hand;
+	 box-shadow:3px 3px 3px #999;
+	}
+.yellow-box{
+	 height:150px;
+	 width:100%;
+	 background-color:yellow;
+	 color:#333;
+	 border: 1px #999 solid;
+	 padding:5px;
+	 margin:8px;
+	 float:left;
+	 cursor:pointer;cursor:hand;
+	 box-shadow:3px 3px 3px #999;
+	}
+.red-box{
+	 height:150px;
+	 width:100%;
+	 background-color:red;
+	 color:#fff;
+	 border: 1px #999 solid;
+	 padding:5px;
+	margin:8px;
+	 float:left;
+	 cursor:pointer;cursor:hand;
+	 box-shadow:3px 3px 3px #999;
+	}
+.blue-box{
+	 height:150px;
+	 width:100%;
+	 background-color:blue;
+	 color:#fff;
+	 border: 1px #999 solid;
+	 padding:5px;
+	 margin:8px;
+	 float:left;
+	 cursor:pointer;cursor:hand;
+	 box-shadow:3px 3px 3px #999;
+	}
+.gray-box{
+	height:150px;
+	 width:100%;
+	 background-color:gray;
+	 color:#fff;
+	 border: 1px #999 solid;
+	 padding:5px;
+	 margin:8px;
+	 float:left;
+	 cursor:pointer;cursor:hand;
+	 box-shadow:3px 3px 3px #999;
+	}
+
+.flag-red
+    {
+    background:#FF0000;border:1px solid #666;height:15px;width:15px;float:right;margin-right:5px;
+    }
+.flag-amber
+    {
+    background:#DBA901;border:1px solid #666;height:15px;width:15px;float:right;margin-right:5px;
+    }
+.flag-green
+    {
+    background:#33CC00;border:1px solid #666;height:15px;width:15px;float:right;margin-right:5px;
+    }
+    
+    .postit-holder{
+	text-align:center;
+	margin-top: 12px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 900px;
+	}
+table#general {
+    border-collapse: collapse;  
+    width:100%; 
+}
+#general tr {
+    background-color: #eee;
+    border-top: 1px solid rgb(0, 108, 86);
+}
+#general tr:hover {
+    background-color: #ccc;
+}
+#general th {
+    background-color: black;
+	color:#FFF;
+	border: 1px solid rgb(0, 108, 86);
+    padding: 3px 5px;
+}
+#general td {
+    padding: 1px 5px;
+    border-left: 1px solid rgb(0, 108, 86); border-right: 1px solid rgb(0, 108, 86);
+    border-bottom: 1px solid rgb(0, 108, 86);
+}
+table#signin {
+    border-collapse: collapse;   
+}
+#signin tr {
+    height:40px;
+}
+#signin td {
+    padding: 1px 5px;
+}
+table#kanban {
+    border-collapse: collapse;   
+}
+#kanban tr {
+    background-color: #eee;
+    border-top: 1px solid rgb(0, 108, 86);
+}
+#kanban th {
+    background-color: black;
+	color:#FFF;
+	border: 1px solid rgb(0, 108, 86);
+    padding: 3px 5px;
+}
+#kanban td {
+    padding: 1px 5px;
+    border-left: 1px solid rgb(0, 108, 86); 
+    border-right: 1px solid rgb(0, 108, 86);
+    border-bottom: 1px solid rgb(0, 108, 86);
+}
+
+table#kanban-card {
+    border-collapse: collapse;
+	width:100%;
+	margin-bottom:8px;
+	margin-top:8px;  
+}
+#kanban-card tr {
+    background-color: #fff;
+    border-top: 1px solid rgb(0, 108, 86);
+}
+#kanban-card th {
+    background-color: rgb(0, 108, 86);
+	color:#FFF;
+	border: 1px solid rgb(0, 108, 86);
+    padding: 3px 5px;
+    text-align: left;
+}
+#kanban-card td {
+    padding: 1px 5px;
+    border-left: 1px solid rgb(0, 108, 86); border-right: 1px solid rgb(0, 108, 86); border-bottom: 1px solid rgb(0, 108, 86);
+}
+table#post-it {
+    border-collapse: collapse;  
+    width:100%;
+}
+
+#general th {
+    padding: 3px 5px;
+}
+#post-it td {
+    padding: 1px 5px;
+}
+.post-it{
+	width:200px;
+	height:200px;
+	float:left;
+	padding:5px;
+	margin-bottom:5px;
+	margin-right:17px;
+	}
+.filter {
+	border: 1px solid #555;
+	padding: 10px;
+	background:#CEF6CE;
+	width:98%;
+	float:left;
+	margin-bottom:10px;
+}
+.btn {
+	BORDER: 1px solid #ccc; 
+}
+.btn:hover {
+	BACKGROUND-COLOR: #d9d9d9; BACKGROUND-POSITION: 0px -15px; COLOR: #333333; TEXT-DECORATION: none; -webkit-transition: background-position 0.1s linear; -moz-transition: background-position 0.1s linear; -ms-transition: background-position 0.1s linear; -o-transition: background-position 0.1s linear; transition: background-position 0.1s linear
+}
+.btn:focus {
+	OUTLINE-STYLE: dotted; OUTLINE-COLOR: #333; OUTLINE-WIDTH: thin; outline-offset: -2px
+}
+.btn-primary {
+	BORDER: 1px solid #0055cc; 
+	BACKGROUND-COLOR: #0055cc;  
+	BACKGROUND-REPEAT: repeat-x; 
+	COLOR: #ffffff; 
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.btn-primary:hover {
+	BACKGROUND-COLOR: #004ab3;
+	COLOR: #ffffff; 
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25)
+}
+.signin-message{
+	text-align:left;
+	padding:10px;
+	float:left;
+	width:325px;
+	}
+
+/* ~~ Validation ~~ */
+label { 
+	display: inline-block; 
+	}
+label.error {
+	display: inline-block;
+	color: #CC3366;
+	font-size: 10px;
+	font-style:italic;
+	width: auto;
+	float: none;
+	margin-left:3px;
+		}
+input.error {
+  	border: 1px solid #CC3366;
+	background: #ffbcbc;
+  }
+select.error {
+  	border: 1px solid #CC3366;
+	background: #ffbcbc;
+  }
+textarea.error {
+  	border: 1px solid #CC3366;
+	background: #ffbcbc;
+  }
+.messagebox-empty{ 
+	margin-bottom:5px;
+	padding:5px;
+	min-height:40px;
+	}
+.messagebox{
+	background:#F4FA58; 
+	border: 1px solid #CC3366; 
+	width:97%; 
+	margin-bottom:5px;
+	padding:5px;
+	min-height:40px;
+	}
+.messagebox p {
+	margin-bottom:0px;
+	}	
+	
+	.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+ul.tabs li {
+    float: left;
+    margin: 0;
+    margin-left:1px;
+    padding: 0;
+    height: 31px; /*--Subtract 1px from the height of the unordered list--*/
+    line-height: 31px; /*--Vertically aligns the text within the tab--*/
+    border: 1px solid #999;
+    border-left: none;
+    margin-bottom: -1px; /*--Pull the list item down 1px--*/
+    overflow: hidden;
+    position: relative;
+    background: #e0e0e0;
+}
+ul.tabs li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding: 0 20px;
+    border: 1px solid #fff; /*--Gives the bevel look with a 1px white border inside the list item--*/
+    outline: none;
+}
+ul.tabs li a:hover {
+    background: #ccc;
+}
+html ul.tabs li.active, html ul.tabs li.active a:hover  { /*--Makes sure that the active tab does not listen to the hover properties--*/
+    background: #fff;
+    border-bottom: 1px solid #fff; /*--Makes the active tab look like it's connected with its content--*/
+}
+.tab_container {
+    border: 1px solid #999;
+    border-top: none;
+    clear: both;
+    float: left; 
+    background: #fff;
+	height: 100%;
+	width:100%;
+	min-height: 450px;
+	min-width:760px;
+}
+.tab_content {
+    padding: 18px;
+	height: 100%;
+}

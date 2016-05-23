@@ -25,6 +25,7 @@ namespace VCB_NET
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/bootstrapCustom.css",
                       "~/Content/site.css"));
         }
     }

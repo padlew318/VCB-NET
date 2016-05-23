@@ -4,8 +4,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VCB-NET", "VCB-NET\VCB-NET.csproj", "{5FD2AB8E-1FD8-40D7-A20A-7C0A2759C9CB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8A3368FF-0676-417D-9AE8-90B1D600D602} = {8A3368FF-0676-417D-9AE8-90B1D600D602}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VCB-NET.Tests", "VCB-NET.Tests\VCB-NET.Tests.csproj", "{C1FD7020-4B3F-448C-A2A8-FE2F09839D48}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "VCB-DB", "VCB-DB\VCB-DB.sqlproj", "{8A3368FF-0676-417D-9AE8-90B1D600D602}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +26,12 @@ Global
 		{C1FD7020-4B3F-448C-A2A8-FE2F09839D48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1FD7020-4B3F-448C-A2A8-FE2F09839D48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1FD7020-4B3F-448C-A2A8-FE2F09839D48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A3368FF-0676-417D-9AE8-90B1D600D602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A3368FF-0676-417D-9AE8-90B1D600D602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A3368FF-0676-417D-9AE8-90B1D600D602}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8A3368FF-0676-417D-9AE8-90B1D600D602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A3368FF-0676-417D-9AE8-90B1D600D602}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A3368FF-0676-417D-9AE8-90B1D600D602}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,21 +6,17 @@ using System.Web.Mvc;
 
 namespace VCB_NET.Controllers
 {
-    public class HomeController : Controller
+    public class AuthController : Controller
     {
-        public ActionResult Index()
+        // GET: Auth
+        public ActionResult SignIn()
         {
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult CheckSignIn()
         {
             return View();
-        }
-
-        public ActionResult Contact()
-        {
-             return View();
         }
     }
 }

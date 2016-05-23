@@ -1,0 +1,127 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="col-sm-12">
+    <?php
+    switch ($msg):
+    case '1':?>
+    <br>
+    <div class="alert alert-success" role="alert" style="margin-bottom: 0">
+        <p>
+            <i>
+                <b>Success</b><br>An email has been sent with your new password.
+            </i>
+        </p>
+    </div>
+    <?php   break;
+    case '2': ?>
+    <br>
+    <div class="alert alert-success" role="alert" style="margin-bottom: 0">
+        <p>
+            <i>
+                <b>Success</b><br>Your password has been changed, please use your new password to sign in.
+            </i>
+        </p>
+    </div><?php
+    break;
+    case '3':?>
+    <br>
+    <div class="alert alert-danger" role="alert" style="margin-bottom: 0">
+        <p>
+            <i>
+                Your password or username was entered incorrectly. <br>
+                Please try again or use
+                <b>
+                    <a href="password_forgotten.php">Forgotten your password?</a>
+                </b>
+            </i>
+        </p>
+    </div><?php
+    break;
+    case '4':?>
+    <br>
+    <div class="alert alert-danger" role="alert" style="margin-bottom: 0">
+        <p>
+            <i>
+                Your username was entered incorrectly. <br>
+                Please try again - <b>
+                    <a href="password_forgotten.php">Forgotten your password?</a>
+                </b>
+            </i>
+        </p>
+    </div><?php
+    break;
+    endswitch; ?>
+</div>
+<div class="col-sm-3">
+    &nbsp;
+</div>
+
+<div class="col-sm-6">
+    <?php
+    if ($msg == ''):?>
+    <br><br><br><br>
+    <?php
+    endif;?>
+
+    <!--[if IE]>
+    <div class="alert alert-danger" role="alert" style="margin-bottom: 0">
+        <p>
+            <i>For the best user experience please open this application in <b>Mozilla Firefox</b>.</br>
+                The use of maps in IE8 has been depreciated and if you need the map functionality then you have to
+                use <b>Mozilla Firefox</b>.</br>
+                This can be found by using Start menu -> All Programs -> Mozilla firefox.</i>
+        </p>
+    </div>
+    <![endif]-->
+    
+
+    <form class="well form-horizontal" role="form" name="signin" id="signin" method="post" action="check_login.php">
+        <fieldset>
+            <legend>Sign In</legend>
+            <div class="form-group">
+                <label for="username" class="col-sm-2 control-label">Username:</label>
+
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" placeholder="Type your username"
+                           name="username"
+                           id="username"
+                           tabindex="1">
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="password" class="col-sm-2 control-label">Password:</label>
+
+                <div class="col-sm-9">
+                    <input type="password"
+                           class="form-control"
+                           placeholder="Type a password"
+                           name="password"
+                           id="password"
+                           required
+                           tabindex="2"
+                           minlength="4">
+                </div>
+            </div>
+            <div class="form-actions">
+                <div class="btn-toolbar">
+                    <button type="submit" name="Submit" class="btn btn-primary" id="LoginButton" tabindex="3">
+                        <span class="icon-lock"></span> Login
+                    </button>
+                </div>
+                <br>
+
+                <p><a href="password_forgotten.php">Forgotten your password?</a></p>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+<div class="col-sm-3">
+    &nbsp;
+</div>
